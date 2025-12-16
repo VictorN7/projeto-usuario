@@ -1,7 +1,8 @@
 package br.com.victornogueira.projeto.entity;
 
 import java.util.Objects;
-
+import org.springframework.beans.BeanUtils;
+import br.com.victornogueira.projeto.dto.UserDTO;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -28,6 +29,13 @@ public class UserEntity {
 	
 	@Column(nullable = false)
 	private String email;
+	
+	public UserEntity(UserDTO userDto) {
+		BeanUtils.copyProperties(userDto, this);
+	}
+
+	public UserEntity() {
+	}
 	
 	public Long getId() {
 		return id;
