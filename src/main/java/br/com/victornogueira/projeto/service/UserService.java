@@ -19,7 +19,7 @@ public class UserService {
 		userRepository.save(new UserEntity(userDto));
 	}
 	
-	public List<UserDTO> listUser(){
+	public List<UserDTO> listUsers(){
 		List<UserEntity> userEntity = userRepository.findAll();
 		return userEntity.stream().map(UserDTO::new).toList();
 	}

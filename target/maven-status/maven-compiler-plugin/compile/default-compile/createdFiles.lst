@@ -1,0 +1,6 @@
+br\com\victornogueira\projeto\service\UserService.class
+br\com\victornogueira\projeto\dto\UserDTO.class
+br\com\victornogueira\projeto\controller\UserController.class
+br\com\victornogueira\projeto\entity\UserEntity.class
+br\com\victornogueira\projeto\ProjetoApplication.class
+br\com\victornogueira\projeto\repository\UserRepository.class
